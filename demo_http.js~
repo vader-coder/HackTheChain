@@ -1,0 +1,9 @@
+//set up node.js webserver
+var http = require('http');
+
+//create server object.
+http.createServer(function (req, res) {
+  res.write('Hello World!');//write response.
+  res.end(); //end response
+}).listen(8080);//server obj listens to port 8080
+
